@@ -1,23 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+
+<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    >
+    android:orientation="vertical"
 
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
     <ImageView
-        android:layout_width="349dp"
-        android:layout_height="342dp"
-        android:background="@drawable/ic_launcher" />
+        android:id="@+id/imageView2"
+        android:layout_width="176dp"
+        android:layout_height="116dp"
+        android:background="@drawable/ic_launcher"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/button1"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textview" />
+
+
+</LinearLayout>
     <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        ads:adSize="BANNER"
         android:background="#fff000"
-        ads:adUnitId="ca-app-pub-1839280616909673/9667505254">
-    </com.google.android.gms.ads.AdView>
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1839280616909673/9667505254"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteY="686dp"></com.google.android.gms.ads.AdView>
+
+
 </RelativeLayout>
