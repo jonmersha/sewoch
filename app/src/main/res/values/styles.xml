@@ -1,20 +1,43 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <!-- application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:windowBackground">@color/white</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="button">
+        <item name="android:minWidth">150dp</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="button.light" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="button.dark">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="button.dark.blue">
+        <item name="android:background">@color/blue</item>
+    </style>
+
+    <style name="button.dark.orange">
+        <item name="android:background">@color/orange</item>
+    </style>
+
+    <style name="blue_label">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="blue_label.title">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="input">
+        <item name="android:textSize">24sp</item>
+    </style>
 
 </resources>
