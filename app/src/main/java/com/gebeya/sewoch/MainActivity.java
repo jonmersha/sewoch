@@ -49,82 +49,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-
-
-
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
-
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_share, R.id.nav_send)
-                .setDrawerLayout(drawer)
-                .build();
-
-    }
-
-    public void PostRequest(View v){
-        try {
-            postRequest();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-
-    public void postRequest() throws IOException{
-
-        MediaType MEDIA_TYPE = MediaType.parse("application/json");
-        String url = "https://sewoch.hira-software.com/message";
-
-        OkHttpClient client = new OkHttpClient();
-
-        JSONObject postdata = new JSONObject();
-        try {
-            postdata.put("phoneNumber","+251910770694");
-
-        } catch(JSONException e){
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        RequestBody body = RequestBody.create(MEDIA_TYPE, postdata.toString());
-
-        Request request = new Request.Builder()
-                .url(url)
-                .post(body)
-                .header("Accept", "application/json")
-                .header("Content-Type", "application/json")
-                .build();
-        client.newCall(request).enqueue(new Callback() {
-            @Override
-            public void onFailure(Call call, IOException e) {
-                String mMessage = e.getMessage().toString();
-                Log.w("failure Response", mMessage);
-                //call.cancel();
-            }
-
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-
-                String mMessage = response.body().string();
-               // Log.e(TAG, mMessage);
-            }
-        });
 
 
 
     }
+
 
 }

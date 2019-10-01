@@ -2,9 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
+
+    <FrameLayout
+        android:id="@+id/frmae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,69 +21,63 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_marginTop="40dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_discover"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_discover" />
-
+                android:contentDescription="@string/todo" />
 
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_chat_list" />
+                app:srcCompat="@drawable/ic_chat_list"
+                android:contentDescription="@string/todo" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            >
 
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 app:srcCompat="@drawable/ic_actvity_button"
-
-                android:layout_weight="1"
-
-
-                />
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo" />
         </LinearLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_marginTop="40dp"
             android:layout_weight="1"
             android:orientation="horizontal">
-
-
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_group" />
-
+                app:srcCompat="@drawable/ic_group"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/todo" />
             <ImageView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 app:srcCompat="@drawable/ic_profile"
-                android:contentDescription="Profile Setting"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/profile_setting"
                 />
 
-        </LinearLayout>
+        </RelativeLayout>
 
     </LinearLayout>
 
