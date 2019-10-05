@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SignUp">
+<LinearLayout xmlns:sewoch="http://schemas.android.com/apk/res/android"
+    sewoch:layout_height="match_parent"
+    sewoch:layout_width="match_parent"
+    sewoch:orientation="vertical"
+    sewoch:background="#00E91E63">
+    <ImageView
+        sewoch:layout_width="wrap_content"
+        sewoch:layout_height="wrap_content"
+        sewoch:background="@drawable/ic_launcher"
+        sewoch:layout_gravity="center"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        sewoch:layout_width="match_parent"
+        sewoch:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -2,23 +2,14 @@
 <LinearLayout xmlns:sewoch="http://schemas.android.com/apk/res/android"
     sewoch:layout_height="match_parent"
     sewoch:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     sewoch:orientation="vertical"
     sewoch:background="#FFFF44">
-
-
         <ImageView
             sewoch:layout_width="wrap_content"
             sewoch:layout_height="wrap_content"
             sewoch:background="@drawable/ic_launcher"
             sewoch:layout_gravity="center"
-
-
             />
-
-
-
-
     <TextView
         sewoch:layout_width="wrap_content"
         sewoch:layout_height="wrap_content"

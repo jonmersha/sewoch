@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:sewoch="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    sewoch:orientation="vertical"
+    sewoch:layout_width="match_parent"
+    sewoch:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        sewoch:layout_width="match_parent"
+        sewoch:layout_height="50dp"
+        sewoch:layout_marginEnd="30dp"
+        sewoch:layout_marginStart="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#009688"
+        >
+        <TextView
+            sewoch:layout_width="wrap_content"
+            sewoch:layout_height="wrap_content"
+            sewoch:text="group"
+            />
+    </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            sewoch:layout_width="wrap_content"
+            sewoch:layout_height="0dp"
+            sewoch:layout_weight="1"/>
+
+    <androidx.cardview.widget.CardView
+        sewoch:layout_width="match_parent"
+        sewoch:layout_height="50dp"
+        sewoch:layout_marginEnd="30dp"
+        sewoch:layout_marginStart="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#009688"
+        >
+    <TextView
+        sewoch:layout_width="wrap_content"
+        sewoch:layout_height="wrap_content"
+        sewoch:text="group"
+        />
+    </androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView
+            sewoch:layout_width="wrap_content"
+            sewoch:layout_height="0dp"
+            sewoch:layout_weight="2"/>
+
+
+</LinearLayout>
