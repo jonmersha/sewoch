@@ -5,11 +5,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="#484f8b"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+    </androidx.appcompat.widget.Toolbar>
     <FrameLayout
-        android:id="@+id/frmae"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/toolbar"
+        android:background="#F4F7F4"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="69dp"
@@ -20,22 +38,27 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_height="match_parent"
+
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/discover"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_discover"
                 android:layout_weight="1"
+                android:onClick="discoverVeiw"
+                android:padding="15dp"
                 android:contentDescription="@string/todo" />
-
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:padding="15dp"
                 app:srcCompat="@drawable/ic_chat_list"
                 android:contentDescription="@string/todo" />
 
@@ -47,37 +70,43 @@
             android:layout_weight="1"
             android:orientation="vertical"
             >
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
                 app:srcCompat="@drawable/ic_actvity_button"
                 android:layout_gravity="center"
                 android:contentDescription="@string/todo" />
         </LinearLayout>
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
                 app:srcCompat="@drawable/ic_group"
                 android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:padding="15dp"
                 android:contentDescription="@string/todo" />
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 app:srcCompat="@drawable/ic_profile"
                 android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="15dp"
                 android:contentDescription="@string/profile_setting"
                 />
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </LinearLayout>
 

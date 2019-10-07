@@ -1,11 +1,11 @@
 <resources>
 
     <!-- application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/blue</item>
-        <item name="android:windowBackground">@color/white</item>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#484f8b</item>
+        <item name="colorPrimaryDark">#484f8b</item>
+        <item name="colorAccent">#484f8b</item>
+        <item name="android:windowBackground">#484f8b</item>
     </style>
 
     <style name="button">

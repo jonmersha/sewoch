@@ -5,42 +5,47 @@
     sewoch:layout_width="match_parent"
     sewoch:layout_height="match_parent">
 
+
     <androidx.cardview.widget.CardView
         sewoch:layout_width="match_parent"
-        sewoch:layout_height="50dp"
-        sewoch:layout_marginEnd="30dp"
-        sewoch:layout_marginStart="30dp"
+        sewoch:layout_height="40dp"
         app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="#009688"
+        app:cardBackgroundColor="#EBF1F1"
+        sewoch:layout_marginTop="10dp"
+
         >
-        <TextView
-            sewoch:layout_width="wrap_content"
-            sewoch:layout_height="wrap_content"
-            sewoch:text="group"
+        <EditText
+            sewoch:layout_width="match_parent"
+            sewoch:layout_height="match_parent"
+            sewoch:text="People"
+            sewoch:padding="10dp"
             />
     </androidx.cardview.widget.CardView>
 
         <androidx.recyclerview.widget.RecyclerView
-            sewoch:layout_width="wrap_content"
+            sewoch:id="@+id/frien_list"
+            sewoch:layout_width="match_parent"
             sewoch:layout_height="0dp"
             sewoch:layout_weight="1"/>
 
     <androidx.cardview.widget.CardView
         sewoch:layout_width="match_parent"
-        sewoch:layout_height="50dp"
-        sewoch:layout_marginEnd="30dp"
-        sewoch:layout_marginStart="30dp"
+        sewoch:layout_height="40dp"
         app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="#009688"
+        app:cardBackgroundColor="#EBF1F1"
+        sewoch:layout_marginTop="10dp"
+
         >
-    <TextView
-        sewoch:layout_width="wrap_content"
-        sewoch:layout_height="wrap_content"
-        sewoch:text="group"
-        />
+        <TextView
+            sewoch:layout_width="match_parent"
+            sewoch:layout_height="match_parent"
+            sewoch:text="Groups"
+            sewoch:padding="10dp"
+            />
     </androidx.cardview.widget.CardView>
         <androidx.recyclerview.widget.RecyclerView
-            sewoch:layout_width="wrap_content"
+            sewoch:id="@+id/group_recycler"
+            sewoch:layout_width="match_parent"
             sewoch:layout_height="0dp"
             sewoch:layout_weight="2"/>
 
