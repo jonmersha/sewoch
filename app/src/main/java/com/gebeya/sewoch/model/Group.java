@@ -20,4 +20,14 @@ public class Group {
     public String getName() {
         return name;
     }
+
+    public Group setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+    public Group setDetail(String detail) {
+        this.detail = detail;
+        return this;
+    }
 }

@@ -20,12 +20,14 @@ public class FriendDataAdapter extends RecyclerView.Adapter<FriendDataAdapter.Ha
     List<Friend> friendList;
 
     public FriendDataAdapter() {
-        //this.friendList = friendList;
+        friendList=new ArrayList<>();
 
-        this.friendList=new ArrayList<>();
-        for( int i=0;i<20;i++){
-            friendList.add(new Friend());
-        }
+        friendList.add(new Friend().setName("Addis Nega"));
+        friendList.add(new Friend().setName("Edene Degefa"));
+        friendList.add(new Friend().setName("Dyn xm"));
+        friendList.add(new Friend().setName("Hirut Ababa"));
+
+
     }
     @NonNull
     @Override

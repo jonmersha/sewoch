@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     >
 
     <androidx.appcompat.widget.Toolbar
@@ -16,7 +17,7 @@
             android:layout_height="wrap_content"
             android:text="Discover"
             android:textColor="#fff"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             />
     </androidx.appcompat.widget.Toolbar>
@@ -26,7 +27,6 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="50dp"
         android:layout_below="@+id/toolbar"
-        android:background="#F4F7F4"
         />
     <LinearLayout
         android:layout_width="match_parent"

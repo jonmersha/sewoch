@@ -10,7 +10,7 @@
         sewoch:layout_width="match_parent"
         sewoch:layout_height="40dp"
         app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="#EBF1F1"
+        app:cardBackgroundColor="#fff"
         sewoch:layout_marginTop="10dp"
 
         >
@@ -32,7 +32,7 @@
         sewoch:layout_width="match_parent"
         sewoch:layout_height="40dp"
         app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="#EBF1F1"
+        app:cardBackgroundColor="#fff"
         sewoch:layout_marginTop="10dp"
 
         >
@@ -47,6 +47,8 @@
             sewoch:id="@+id/group_recycler"
             sewoch:layout_width="match_parent"
             sewoch:layout_height="0dp"
+            sewoch:layout_marginLeft="20dp"
+            sewoch:layout_marginRight="20dp"
             sewoch:layout_weight="2"/>
 
 

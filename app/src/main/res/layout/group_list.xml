@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="3dp"
     android:elevation="1dp"
-    android:background="#F2F3F0"
+
     >
 
     <LinearLayout
@@ -26,19 +26,23 @@
         >
 
         <TextView
+
+            android:id="@+id/group_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Gebeya Student"
+
             android:paddingLeft="20dp"
             android:textStyle="bold"
             android:textSize="16sp"
+            android:textColor="#4CAF50"
             />
         <TextView
+            android:id="@+id/group_detail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
             android:textSize="11sp"
-            android:text="Gebeya Student Discussion Point lets discuse every issues here ..."
+
             />
     </LinearLayout>
 

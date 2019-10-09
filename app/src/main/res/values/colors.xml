@@ -4,8 +4,8 @@
     <color name="colorPrimaryDark">#484f8b</color>
     <color name="colorAccent">#484f8b</color>
 
-    <color name="white">#484f8b</color>
-    <color name="black">@android:color/black</color>
+    <color name="white">#fff</color>
+    <color name="black">#484f8b</color>
 
     <!-- BLUE COLORS -->
     <color name="blue">#484f8b</color>

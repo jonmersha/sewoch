@@ -7,7 +7,7 @@ public class Friend {
 
     public Friend() {
 
-        this.name="Addis Nega";
+
 
     }
 
@@ -23,8 +23,10 @@ public class Friend {
         return name;
     }
 
-    public void setName(String name) {
+    public Friend setName(String name) {
+
         this.name = name;
+        return this;
     }
 
     public Friend(int firendId, String name) {
