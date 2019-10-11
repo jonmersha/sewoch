@@ -15,30 +15,4 @@
     <color name="orange">#FF6100</color>
     <color name="orange_dark">#C74C00</color>
 
-    <color name="qiscus_primary">#009688</color>
-    <color name="qiscus_primary_dark">#00796B</color>
-    <color name="qiscus_primary_light">#B2DFDB</color>
-    <color name="qiscus_accent">#FF5722</color>
-    <color name="qiscus_accent_light">#FFCCBC</color>
-    <color name="qiscus_primary_text">#212121</color>
-    <color name="qiscus_secondary_text">#727272</color>
-    <color name="qiscus_white">#FFFFFF</color>
-    <color name="qiscus_divider">#B6B6B6</color>
-    <color name="qiscus_light_grey">#D8D8D8</color>
-    <color name="qiscus_red">#d32f2f</color>
-    <color name="qiscus_dark_white">#f6f6f6</color>
-    <color name="qiscus_camera_background">#a1887f</color>
-    <color name="qiscus_gallery_background">#ba68c8</color>
-    <color name="qiscus_file_background">#64b5f6</color>
-    <color name="qiscus_record_background">#4db6ac</color>
-    <color name="qiscus_contact_background">#7986cb</color>
-    <color name="qiscus_location_background">#81c784</color>
-    <color name="qiscus_keyboard_background">#90a4ae</color>
-    <color name="qiscus_transparent_black">#4CAF50</color>
-    <color name="qiscus_left_bubble">#D0D0D0</color>
-    <color name="qiscus_account_linking_background">#DFDFDF</color>
-    <color name="qiscus_mention_all">#1a237e</color>
-    <color name="qiscus_mention_other">#009688</color>
-    <color name="qiscus_mention_me">#af2412</color>
-
 </resources>
