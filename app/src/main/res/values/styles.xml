@@ -2,10 +2,10 @@
 
     <!-- application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">#ECECF1</item>
+        <item name="colorPrimary">#D6D6E0</item>
         <item name="colorPrimaryDark">#2196F3</item>
         <item name="colorAccent">#484f8b</item>
-        <item name="android:windowBackground">#F8F8FA</item>
+        <item name="android:windowBackground">#4CAF50</item>
     </style>
 
     <style name="button">
@@ -30,6 +30,12 @@
         <item name="android:textColor">@color/blue</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="incoming_chat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
     </style>
 
     <style name="blue_label.title">

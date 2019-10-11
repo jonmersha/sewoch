@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:sewoch="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     sewoch:orientation="vertical"
     sewoch:layout_width="match_parent"
-    sewoch:layout_height="match_parent">
+    sewoch:layout_height="match_parent"
+    tools:context=".MainActivity">
 
 
     <androidx.cardview.widget.CardView
@@ -26,7 +28,11 @@
             sewoch:id="@+id/frien_list"
             sewoch:layout_width="match_parent"
             sewoch:layout_height="0dp"
-            sewoch:layout_weight="1"/>
+            sewoch:layout_weight="1"
+            tools:listitem="@layout/horizontal_people"
+            sewoch:orientation="horizontal"
+
+            />
 
     <androidx.cardview.widget.CardView
         sewoch:layout_width="match_parent"
@@ -49,7 +55,9 @@
             sewoch:layout_height="0dp"
             sewoch:layout_marginLeft="20dp"
             sewoch:layout_marginRight="20dp"
-            sewoch:layout_weight="2"/>
+            sewoch:layout_weight="2"
+            tools:listitem="@layout/group_list"
+            />
 
 
 </LinearLayout>
