@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "719534550260-eevo6ej5bnh020t4rludl880d5u1vlar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gebeya.sewoch",
+            "certificate_hash": "5aa535f609c397ad109c156c3b25f3ae318ff5ca"
+          }
+        },
+        {
           "client_id": "719534550260-k11967hg5f5kb3rfk2cj7h8bskrp91gm.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
