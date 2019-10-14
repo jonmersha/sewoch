@@ -18,6 +18,8 @@ import okhttp3.Response;
 import static androidx.constraintlayout.widget.Constraints.TAG;
 
 public class PostRequest {
+
+
     public void postRequst(){
         MediaType MEDIA_TYPE = MediaType.parse("application/json");
         String url = "https://sewoch.herokuapp.com/auth/sendemail";
@@ -25,7 +27,7 @@ public class PostRequest {
         OkHttpClient client = new OkHttpClient();
         JSONObject postdata = new JSONObject();
         try {
-            postdata.put("phoneNumber", "aneh");
+            postdata.put("phoneNumber", "0");
         } catch(JSONException e){
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -54,7 +56,6 @@ public class PostRequest {
                 Log.e(TAG, mMessage);
             }
         });
-
 
 
     }

@@ -2,6 +2,7 @@ package com.gebeya.sewoch;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.gebeya.sewoch.auth.CreateAccount;
 import com.gebeya.sewoch.fragment.Discover;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -33,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         firebaseAnalytics=FirebaseAnalytics.getInstance(this);
         //discover=findViewById(R.id.discover);
+
+
+
+        Intent intent=new Intent(this, CreateAccount.class);
+        startActivity(intent);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             // Create channel to show notifications.
