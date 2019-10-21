@@ -3,53 +3,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".auth.CreateAccount"
+    android:background="#FFFFFF"
     android:orientation="vertical"
-    android:background="#fff"
-    >
+    tools:context=".auth.CreateAccount"
 
+    >
     <Button
         android:id="@+id/signUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:text="Sign Up!"
-        android:textAllCaps="false"
-        android:textSize="30sp"
-        android:onClick="signUpToSewoch"
-        android:background="@drawable/button"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="80dp"
+        android:background="@drawable/button"
+        android:onClick="signUpToSewoch"
+        android:text="Confirm your phone number!"
+        android:textAllCaps="false"
+        android:textColor="#575653"
+        android:textSize="25sp"
         />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="60dp"
+        android:orientation="horizontal"
         >
-
         <TextView
             android:id="@+id/code"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="40sp"
-            android:text="+251"
+            android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
             android:background="@drawable/textback"
-            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="+251"
+            android:textSize="20sp"
             />
+
         <EditText
             android:id="@+id/phoneNumber"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="913 153 125"
-            android:maxLength="9"
-            android:textSize="40sp"
+            android:layout_marginHorizontal="5dp"
             android:layout_weight="3"
             android:background="@drawable/textback"
+            android:hint="9xx xx xx"
+            android:maxLength="9"
+            android:padding="10dp"
             android:textAlignment="center"
-            android:layout_margin="10dp"
+            android:textSize="20sp"
             />
+
     </LinearLayout>
 
 
