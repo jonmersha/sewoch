@@ -36,14 +36,15 @@ public class SewochMessaginService extends FirebaseMessagingService {
             Log.e("NOTIFICATION",title+" "+message);
         }
         if(remoteMessage.getData().size()>0){
-            String statusValue=remoteMessage.getData().get("status");
-            String account=remoteMessage.getData().get("account");
-            String balance=remoteMessage.getData().get("balance");
+           // String statusValue=remoteMessage.getData().get("status");
+            String userName=remoteMessage.getData().get("userName");
+            String mobileNUmber=remoteMessage.getData().get("mobileNUmber");
             String sender=remoteMessage.getData().get("sender");
-          //  Log.e("STATUS",statusValue);
-            Log.e("STATUS",account);
-            Log.e("STATUS",balance);
+          //Log.e("STATUS",statusValue);
+            Log.e("STATUS",userName);
+            Log.e("STATUS",mobileNUmber);
             Log.e("STATUS",sender);
+
         }
     }
     public void generateNotification(String title,String message){
@@ -85,7 +86,8 @@ public class SewochMessaginService extends FirebaseMessagingService {
                                 .setContentTitle(title)
                                 .setContentIntent(pendingIntent)
                                 .setSound(alarmSound)
-                    .build();
+                                .build();
+
             notification=notificationBuilder.getNotification();
             notification.flags=Notification.FLAG_AUTO_CANCEL;
             notificationManager.notify(0,notification);

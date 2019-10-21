@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.gebeya.sewoch.auth.CreateAccount;
+import com.gebeya.sewoch.auth.NumberVerification;
 import com.gebeya.sewoch.fragment.Discover;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -34,12 +35,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         firebaseAnalytics=FirebaseAnalytics.getInstance(this);
-        //discover=findViewById(R.id.discover);
+        discover=findViewById(R.id.discover);
 
 
 
-        Intent intent=new Intent(this, CreateAccount.class);
+        Intent intent=new Intent(this, NumberVerification.class);
         startActivity(intent);
+
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             // Create channel to show notifications.

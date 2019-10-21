@@ -2,7 +2,12 @@ package com.gebeya.sewoch.auth;
 
 import android.util.Log;
 
+import androidx.annotation.NonNull;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -26,15 +31,26 @@ public class HttpHelper {
 
 public  void sighUpPost(String number,String keyval){
     MediaType MEDIA_TYPE = MediaType.parse("application/json");
-    String url = "http://192.168.1.5:3000/send";
+    String url = "https://sewoch.hira-software.com/send";
     OkHttpClient client = new OkHttpClient();
     JSONObject postdata = new JSONObject();
+
+    // TODO:
+    FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+        @Override
+        public void onComplete(@NonNull Task<InstanceIdResult> task) {
+            String token = task.toString();
+
+        }
+    });
+
     try {
         postdata.put("mobileNumber", number);
         postdata.put("key", FirebaseInstanceId.getInstance().getToken());
     } catch(JSONException e){
-        // TODO Auto-generated catch block
+
         e.printStackTrace();
+
     }
     RequestBody body = RequestBody.create(MEDIA_TYPE, postdata.toString());
     Request request = new Request.Builder()
