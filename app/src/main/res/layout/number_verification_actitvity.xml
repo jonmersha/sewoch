@@ -1,24 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".auth.NumberVerification"
+    tools:context=".auth.view.NumberVerification"
     android:background="@color/white"
-    >
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Verification Code Sent via SMS "
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
+<EditText
+    android:id="@+id/verificationCode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="40dp"
 
+    android:background="@drawable/textshape"
+    android:focusable="true"
+    android:hint="please insert vrification"
+    android:textAlignment="center"
+    />
     <Button
-        android:layout_width="300dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#fff"
-        android:text="Verify Your Number"
+        android:text="verify"
         android:textSize="25sp"
         android:textAllCaps="false"
         android:onClick="sendMessage"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         />
 
-</RelativeLayout>
+</LinearLayout>

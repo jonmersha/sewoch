@@ -29,7 +29,7 @@ public class HttpHelper {
     String key;
 
 
-public  void sighUpPost(String number,String keyval){
+public  void sighUpPostonHira(String number,String keyval){
     MediaType MEDIA_TYPE = MediaType.parse("application/json");
     String url = "https://sewoch.hira-software.com/send";
     OkHttpClient client = new OkHttpClient();

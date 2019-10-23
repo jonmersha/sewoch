@@ -15,8 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.gebeya.sewoch.auth.CreateAccount;
-import com.gebeya.sewoch.auth.NumberVerification;
+import com.gebeya.sewoch.auth.view.CreateAccount;
 import com.gebeya.sewoch.fragment.Discover;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -37,9 +36,7 @@ public class MainActivity extends AppCompatActivity {
         firebaseAnalytics=FirebaseAnalytics.getInstance(this);
         discover=findViewById(R.id.discover);
 
-
-
-        Intent intent=new Intent(this, NumberVerification.class);
+        Intent intent=new Intent(this, CreateAccount.class);
         startActivity(intent);
 
 

@@ -1,29 +1,32 @@
 package com.gebeya.sewoch;
 
+import android.app.Activity;
 import android.app.Application;
+import android.os.Bundle;
 
-import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.InstanceIdResult;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 
 public class App extends Application {
-
-    private String downloadedToken;
+    Retrofit retrofit;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
-            @Override
-            public void onComplete(@NonNull Task<InstanceIdResult> task) {
-                String token = task.getResult().getToken();
-                // Save the token in SharedPreferences
-                // startActivity to next screen
+        retrofit=new Retrofit.Builder()
+                .baseUrl("https://sewoch.herokuapp.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+    }
 
-            }
-        });
+    public Retrofit getRetrofit() {
+        return retrofit;
+    }
+
+    public void setRetrofit(Retrofit retrofit) {
+        this.retrofit = retrofit;
     }
 }

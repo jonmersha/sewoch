@@ -27,5 +27,9 @@
     <!-- [END fcm_default_icon_string] -->
     <string name="msg_subscribe_failed">Failed to subscribe to weather topic</string>
     <string name="fcm_message">FCM Message</string>
+    <string name="status_title">status_title</string>
+    <string name="status_running_label" />
+    <string name="status_version_label">stat</string>
+    <string name="status_author_label">Author</string>
 
 </resources>
